@@ -1,20 +1,20 @@
 # base58check
-[![Build Status](https://travis-ci.org/anaskhan96/base58check.svg?branch=master)](https://travis-ci.org/anaskhan96/base58check)
-[![GoDoc](https://godoc.org/github.com/anaskhan96/base58check?status.svg)](https://godoc.org/github.com/anaskhan96/base58check)
-[![Go Report Card](https://goreportcard.com/badge/github.com/anaskhan96/base58check)](https://goreportcard.com/report/github.com/anaskhan96/base58check)
+[![Build Status](https://travis-ci.org/Messer4/base58check.svg?branch=master)](https://travis-ci.org/anaskhan96/base58check)
+[![GoDoc](https://godoc.org/github.com/Messer4/base58check?status.svg)](https://godoc.org/github.com/anaskhan96/base58check)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Messer4/base58check)](https://goreportcard.com/report/github.com/anaskhan96/base58check)
 
 This package in Go provides functions to encode and decode in `base58check`, a specific `base58` encoding format for encoding Bitcoin addresses.
 
 Functions:
 ```go
-func Encode(string, string) (string, error) // takes the version and data as hexadecimal strings and returns the encoded string
-func Decode(string) (string, error) // takes the encoded string and returns the decoded version prepended hexadecimal string
+func Encode([]byte) (string, error) // takes the version and data as hexadecimal strings and returns the encoded string
+func Decode(string) ([]byte, error) // takes the encoded string and returns the decoded version prepended hexadecimal string
 ```
 
 ### Installation
 
 ```bash
-go get github.com/anaskhan96/base58check
+go get github.com/Messer4/base58check
 ```
 
 ### Usage
