@@ -11,7 +11,7 @@ import (
 const alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 
 // Encode encodes the given version and data to a base58check encoded string
-func Encode(dataBytes []byte) (string, error) {
+func Encode(dataBytes []byte) (string) {
 
 	// Performing SHA256 twice
 	sha256hash := sha256.New()
@@ -41,7 +41,7 @@ func Encode(dataBytes []byte) (string, error) {
 		encoded = "1" + encoded
 	}
 
-	return encoded, nil
+	return encoded
 }
 
 // Decode decodes the given base58check encoded string and returns the version prepended decoded string
